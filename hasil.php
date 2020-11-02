@@ -12,6 +12,10 @@ if (isset($_POST['submit'])) {
   if (empty($number1) && empty($number2)) {
     $number1 = 0;
     $number2 = 0;
+  } else if (empty($number1)) {
+    $number1 = 0;
+  } else if (empty($number2)) {
+    $number2 = 0;
   }
 
   $aritmatika = new Aritmatika($operator, $number1, $number2);
