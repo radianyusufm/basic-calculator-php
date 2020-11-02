@@ -18,6 +18,7 @@ if (isset($_POST['submit'])) {
   echo $aritmatika->hitungAritmatika();
 
 } else {
+  //jika user akses file hasil.php tanpa klik submit
 
   header('Location: index.php');
 }
