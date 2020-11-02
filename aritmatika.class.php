@@ -23,7 +23,13 @@
              break;
 
            case 'bagi':
-             $result = $this->number1 / $this->number2;
+
+              if ($this->number2 == 0) {
+                $result = "tidak bisa dibagi dengan 0";
+              } else {
+                $result = $this->number1 / $this->number2;
+              }
+
              break;
 
           case 'kali':
@@ -31,7 +37,12 @@
             break;
 
           case 'modulo':
-             $result = $this->number1 % $this->number2;
+              if ($this->number2 == 0) {
+                $result = "tidak bisa modulo dengan 0";
+              } else {
+                $result = $this->number1 % $this->number2;
+              }
+
               break;
 
            default:
